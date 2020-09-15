@@ -4,6 +4,18 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "P5";
+  src: url("https://saysora.github.io/p5/p5hatty.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "persona";
+  src: url("https://saysora.github.io/p5/PersonifiedUXRegular.ttf");
+  font-weight: 500;
+}
+
 html,
 body {
   width: 100%;
@@ -13,4 +25,94 @@ body {
 .wrap {
   width: 100%;
   min-height: 100%;
+  background: #111;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-area {
+  width: 400px;
+  max-width: 100%;
+}
+
+.main--banner img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.main--banner-text {
+  font-family: "persona";
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+}
+
+.main--banner-text h1 {
+  margin-bottom: 25px;
+}
+
+.main--banner-link {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main--banner-link a {
+  font-family: "P5";
+
+  background: #b80404;
+  padding: 10px 25px 8px;
+  font-size: 1.8em;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+}
+
+.main--banner-link a span {
+  padding: 5px 10px;
+  display: block;
+}
+
+.main--banner-link a span:nth-child(odd) {
+  background: #fff;
+  color: #111;
+  transform: skew(-3deg);
+}
+
+.main--banner-link a span:nth-child(even) {
+  background: #111;
+  color: #fff;
+  transform: skew(5deg);
+}
+
+.main--banner-link a:hover span:nth-child(odd) {
+  animation: 1s skewItb infinite;
+}
+
+.main--banner-link a:hover span:nth-child(even) {
+  animation: 1s skewIt infinite;
+}
+
+@keyframes skewIt {
+  0%,
+  100% {
+    transform: skew(10deg);
+  }
+
+  50% {
+    transform: skew(0deg);
+  }
+}
+
+@keyframes skewItb {
+  0%,
+  100% {
+    transform: skew(-10deg);
+  }
+
+  50% {
+    transform: skew(0deg);
+  }
 }

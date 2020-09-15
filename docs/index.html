@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="p5.css" />
   </head>
   <body>
-    Check it out.
+    <div class="wrap">
+      <div class="main-area">
+        <div class="main--banner">
+          <img src="p5.png" alt="Phantom Thieves Logo" />
+        </div>
+        <div class="main--banner-text">
+          <h1>P5</h1>
+          Persona 5 Better Discord Theme
+        </div>
+        <div class="main--banner-link">
+          <a href="https://github.com/saysora/p5">Download</a>
+        </div>
+      </div>
+    </div>
   </body>
+
+  <script>
+    var link = document.querySelector(".main--banner-link a");
+    link.innerHTML = link.textContent
+      .split("")
+      .map((v) => "<span>" + v + "</span>")
+      .join("");
+  </script>
 </html>
