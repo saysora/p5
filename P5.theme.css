@@ -1,0 +1,232 @@
+/**
+    * @name Persona_5
+    * @version 1.0
+    * @description Discord Theme based on Persona 5 Tech Messaging
+    * @author saysora
+    * @website http://github.com/saysora
+    * @source comingsoon
+*/
+
+:root {
+  --p5-primary: #b80404;
+  --background-primary: #111;
+  --background-secondary: #111;
+  --background-secondary-alt: #111;
+  --background-accent: steelblue;
+  /* --background-floating: red; */
+  /* --background-tertiary: #b80404; */
+
+  --channeltextarea-background: #fff;
+}
+
+/* Set BG for sidebar */
+.scroller-2TZvBN {
+  background: var(--p5-primary);
+}
+
+/* change icons */
+
+.da-folderIconWrapper {
+  background: rgba(10, 10, 10, 0.5) !important;
+}
+
+/* Floating styles */
+
+.da-layer {
+}
+
+.da-styleFixed {
+  /* background: #111; */
+  /* box-shadow: 0 0 3px 0 var(--p5-primary); */
+  /* background: var(--p5-primary); */
+  /* position: relative; */
+  color: #fff;
+  overflow: visible;
+  /* transform: skew(-1deg); */
+  /* z-index: 5; */
+}
+
+/* Forms */
+
+.da-form {
+}
+
+.da-slateContainer span {
+  color: #000;
+}
+
+/* Dunno */
+
+.da-closedFolderIconWrapper {
+  /* background: rgba(0, 0, 0, 0.5); */
+}
+
+/* Core Items */
+
+#status-picker {
+  border-radius: 0;
+}
+
+/* #status-picker > div {
+  z-index: 5;
+  position: relative;
+  background: var(--background-primary);
+  transform: skew(-1deg);
+}
+
+#status-picker::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform: scale(1) skew(-2.5deg);
+}
+
+#status-picker::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform: scale(1);
+} */
+
+.da-menu {
+}
+
+ .da-menu > div {
+  
+  /* transform: skew(1deg); */
+  position: relative;
+  z-index: 5;
+}
+
+
+
+.da-menu:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  transform: skewX(-1deg);
+}
+
+.da-menu:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 2%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform: skewX(-3deg);
+}
+
+.da-statusItem {
+  color: #fff;
+}
+
+.da-colorDefault {
+  background: var(--background-primary);
+  /* padding: 5px 0; */
+  transform: skew(-3deg);
+}
+
+.da-colorDefault.da-focused .da-label {
+  color: #fff;
+}
+
+.da-focused {
+  background: var(--p5-primary) !important;
+  color: #fefefe;
+  position: relative;
+}
+
+.da-focused:before,
+.da-focused:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.da-focused:before {
+  background: var(--p5-primary);
+  transform: skewX(-5deg);
+}
+
+.da-focused:after {
+  background: var(--p5-primary);
+  transform: scaleX(1) skewX(-1deg);
+}
+
+.da-focused > div {
+  position: relative;
+  z-index: 10;
+}
+
+.da-colorDefault:hover {
+  background: rgba(255, 255, 255, 0.8);
+  /* padding: 5px 0; */
+  transform: skew(-2deg);
+  color: var(--background-primary);
+}
+
+.da-focused .da-statusItem {
+  /* color: var(--background-primary); */
+  color: #fff;
+}
+
+/* .da-focused .da-status {
+  color: var(--background-primary) !important;
+} */
+
+.da-channelTextArea .da-webkit {
+  border-radius: 0;
+  transform: skewX(-4deg);
+}
+
+.da-channelTextArea.da-focused .da-webkit {
+}
+
+.da-channelTextArea.da-focused {
+  background: none !important;
+}
+
+.da-channelTextArea.da-focused:before {
+  display: none;
+  background: #fff;
+}
+
+.da-channelTextArea.da-focused:after {
+  display: none;
+  background: #fff;
+}
+
+/* Embeds */
+
+.da-embed {
+  /* border-bottom-right-radius: 0; */
+  background: rgb(12, 12, 12);
+}
+
+/* Badges */
+
+.da-lowerBadge {
+  /* background: #fff !important; */
+}
+
+.da-numberBadge {
+  background:var(--p5-primary)
+  color: #fff;
+}
+
+.da-base {
+  /* background: #fff; */
+}
