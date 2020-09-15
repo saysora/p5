@@ -1,11 +1,17 @@
 /**
-    * @name Persona_5
+    * @name Persona 5
     * @version 1.0
-    * @description Discord Theme based on Persona 5 Tech Messaging
+    * @description Persona 5 Color Scheme for Better Discord
     * @author saysora
-    * @website http://github.com/saysora
-    * @source comingsoon
+    * @website https://github.com/saysora
+    * @source https://github.com/saysora/p5
 */
+
+@font-face {
+  font-family: "P5";
+  src: url("https://github.com/saysora/p5/blob/master/p5hatty.ttf");
+  font-weight: 500;
+}
 
 :root {
   --p5-primary: #b80404;
@@ -95,14 +101,11 @@
 .da-menu {
 }
 
- .da-menu > div {
-  
+.da-menu > div {
   /* transform: skew(1deg); */
   position: relative;
   z-index: 5;
 }
-
-
 
 .da-menu:before {
   position: absolute;
@@ -223,8 +226,9 @@
 }
 
 .da-numberBadge {
-  background:var(--p5-primary)
+  background: var(--p5-primary);
   color: #fff;
+  font-family: "P5";
 }
 
 .da-base {
