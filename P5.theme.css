@@ -7,9 +7,12 @@
     * @source https://github.com/saysora/p5
 */
 
+/* Import Arsenal Font */
+@import url("https://fonts.googleapis.com/css2?family=Arsenal&display=swap");
+
 @font-face {
   font-family: "P5";
-  src: url("https://github.com/saysora/p5/blob/master/p5hatty.ttf");
+  src: url("https://saysora.github.io/p5/p5hatty.ttf");
   font-weight: 500;
 }
 
@@ -228,9 +231,23 @@
 .da-numberBadge {
   background: var(--p5-primary);
   color: #fff;
-  font-family: "P5";
 }
 
 .da-base {
   /* background: #fff; */
+}
+
+/* Date dividers */
+
+.da-divider.da-hasContent .da-content {
+  font-family: "P5";
+  font-size: 1.05em;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+/* Messages */
+
+.da-message {
+  /* font-family: "Arsenal", sans-serif; */
 }
