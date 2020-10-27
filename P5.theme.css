@@ -39,6 +39,8 @@
   --scrollbar-auto-track: #222;
 
   --text-link: #b84948;
+
+  --header-primary: #fff !important;
 }
 
 /* Set BG for sidebar */
@@ -153,7 +155,7 @@
 
 .da-channelTextArea .da-webkit {
   border-radius: 0;
-  transform: skewX(-4deg);
+  transform: skewX(-8deg);
 }
 
 .da-channelTextArea.da-focused {
@@ -275,4 +277,18 @@
 
 .da-listItemWrapper .da-circleIconButton svg {
   color: #fff;
+}
+
+/* List of friends */
+
+.da-container .da-tabBody {
+  background: rgba(10, 10, 10, 0.8);
+}
+
+.da-privateChannels .da-scroller {
+  background: rgba(10, 10, 10, 0.1);
+}
+
+.da-panels .da-container {
+  background: rgba(10, 10, 10, 0.3);
 }
