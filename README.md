@@ -4,7 +4,7 @@
 
 ## P5 Theme DISCORD
 
-I think it's gonna be easier to help people for issues or other needs to join a discord rather than friending + dming so now there's a dedicated Discord specifically to this theme.
+I think, for the sake of helping people troubleshoot and or feature updates regarding the theme, that having a discord server will be easier than needing to friend request me and dm. So a discord has been made.
 
 [<img src="https://discordapp.com/api/guilds/809893441139507250/embed.png" />](https://discord.gg/ZuVUBfWk7N)
 
@@ -35,4 +35,4 @@ _Message fonts_ is PersonifiedUX credited to MV33izawsm
 
 #### Questions
 
-Feel free to open an issue here on github if you're having trouble with the theme. You can also contact me through dsicord at Saysora#3418
+Feel free to open an issue here on github if you're having trouble with the theme. You can also contact me through the discord.
