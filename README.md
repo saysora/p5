@@ -6,7 +6,7 @@
 
 I think it's gonna be easier to help people for issues or other needs to join a discord rather than friending + dming so now there's a dedicated Discord specifically to this theme.
 
-<iframe src="https://discord.com/widget?id=809893441139507250&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+[<img src="https://discordapp.com/api/guilds/809893441139507250/embed.png" />](https://discord.gg/ZuVUBfWk7N)
 
 ## Features
 
