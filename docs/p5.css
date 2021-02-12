@@ -95,6 +95,21 @@ body {
   animation: 1s skewIt infinite;
 }
 
+.main--banner-discord {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  font-family: "persona";
+}
+
+.main--banner-discord h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
 @keyframes skewIt {
   0%,
   100% {
