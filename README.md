@@ -15,6 +15,12 @@ I think, for the sake of helping people troubleshoot and or feature updates rega
 - Persona fonts for inputs and message areas.
 - Skewed Inputs for that Persona 5 Feel
 
+### Releases 
+
+[Current Version 1.0.2](https://github.com/saysora/p5/releases/tag/1.0.2)
+
+[Beta Version 1.0.3a](https://github.com/saysora/p5/releases/tag/1.0.3a)
+
 ### Installation
 
 Download the P5.theme.css and put it in your better discord themes folder.
