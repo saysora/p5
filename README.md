@@ -6,7 +6,7 @@
 
 I think, for the sake of helping people troubleshoot and or feature updates regarding the theme, that having a discord server will be easier than needing to friend request me and dm. So a discord has been made.
 
-[<img src="https://discordapp.com/api/guilds/809893441139507250/embed.png" />](https://discord.gg/ZuVUBfWk7N)
+[<img src="https://discordapp.com/api/guilds/809893441139507250/embed.png" />](https://discord.gg/dAqZ4abMnB)
 
 ## Features
 
