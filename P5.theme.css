@@ -75,25 +75,25 @@
 }
 
 .da-menu:before {
-  position: absolute;
+  /* position: absolute;
   content: "";
   top: 0;
   left: 0;
   width: 50%;
   height: 100%;
-  background: #fff;
+  background: #fff; */
   transform: skewX(-1deg);
 }
 
 .da-menu:after {
-  position: absolute;
+  /* position: absolute;
   content: "";
   top: 0;
   left: 2%;
   width: 100%;
   height: 100%;
   background: #fff;
-  transform: skewX(-3deg);
+  transform: skewX(-3deg); */
 }
 
 .da-statusItem {
@@ -188,12 +188,12 @@
 
 /* Badges */
 
-.da-lowerBadge {
-  /* background: #fff !important; */
+[class^="lowerBadge"] {
+  background: var(--p5-primary);
 }
 
-.da-numberBadge {
-  background: var(--p5-primary);
+[class^="numberBadge"] {
+  background: var(--p5-primary) !important;
   color: #fff;
 }
 
@@ -203,61 +203,97 @@
 
 /* Date dividers */
 
-.da-divider.da-hasContent {
+[class^="divider"] {
   /* border-color: rgba(255, 255, 255, 0.7); */
   border-color: #333;
 }
 
-.da-divider.da-hasContent .da-content {
+[class^="divider"] [class^="content"] {
   font-family: "P5";
   font-size: 1.05em;
   color: #fff;
   letter-spacing: 3px;
   border-radius: 0;
-  transform: skew(-10deg);
 }
 
 /* Messages */
 
-.da-message {
-  font-family: "persona", sans-serif;
+[class^="textArea"] span {
+  color: #000;
+  font-family: "persona";
 }
 
-.da-slateTextArea {
-  font-family: "persona", sans-serif;
+[class^="textArea"] [class^="placeholder"] {
+  font-family: "persona";
 }
 
-.da-placeholder {
-  font-family: "persona", sans-serif;
+[class^="channelTextArea"] [class^="scrollableContainer"] {
+  border-radius: 0;
+  transform: skewX(-10deg);
+}
+
+[class^="channelTextArea"] [class^="scrollableContainer"] [class^="inner"] {
+  transform: skewX(10deg);
+}
+
+[class^="channelTextArea"]
+  [class^="scrollableContainer"]
+  [class^="buttons"]
+  button:hover
+  svg
+  path {
+  fill: var(--p5-primary);
+}
+
+/* Auto Complete New Interface */
+
+[class^="autocompleteInner"] {
+  background: var(--background-secondary);
+}
+
+[class^="autocompleteInner"] [class^="rail"] [class^="scroller"] {
+  background: var(--p5-primary);
+}
+
+[class^="autocompleteInner"] [class^="categorySection"] [class^="wrapper"] {
+  background: none;
+}
+
+.theme-dark [class*="selected"] {
+  background-color: rgba(75, 75, 75, 0.1);
 }
 
 /* Profile Cards */
 
-.da-userPopout .da-headerTop {
+.theme-dark .headerNormal-T_seeN {
   background: var(--p5-primary);
 }
 
-.da-userPopout .da-body,
-.da-userPopout .da-activity {
-  background: var(--background-primary);
+.theme-dark .headerNormal-T_seeN [class^="customStatusText"] {
+  color: #f3f3f3;
 }
 
-.da-userPopout .da-footer {
-  background: var(--background-primary);
+.theme-dark [class^="body-"] {
+  background: rgb(12, 12, 12);
 }
 
-.da-userPopout .da-input:focus {
+.theme-dark [class^="footer-"] {
+  background: rgb(12, 12, 12);
+}
+
+.theme-dark [class^="footer-"] [class^="inputWrapper-"] input {
   border-color: var(--p5-primary);
+  background: rgba(50, 50, 50, 0.1);
 }
 
-.da-userPopout .da-username {
+[class^="userPopout"] {
   font-family: "Arsenal", sans-serif;
   font-weight: 700;
 }
 
 /* Member */
 
-.da-member .da-name {
+[class^="member"] [class^="name"] {
   font-family: "Arsenal", sans-serif;
   font-weight: 700;
 }
