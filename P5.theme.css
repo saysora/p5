@@ -94,7 +94,7 @@
   --p5-primary: #cc0001;
 
   /* Backgrounds */
-  --background-primary: #111;
+  --background-primary: #101010;
   --background-secondary: #111;
   --background-secondary-alt: #111;
   --background-accent: #cc0001;
@@ -394,6 +394,14 @@
 
 /* Messages */
 
+[class^="chat"] {
+  background: #131313;
+}
+
+[class^="chat"] [class^="title"] {
+  background: #111;
+}
+
 [class^="textArea"] span {
   color: #000;
   /* font-family: "New P5"; */
@@ -486,6 +494,10 @@
   color: #fff !important;
 }
 
+[class^="containerDefault"]:nth-child(2n + 3) [class^="iconContainer"] svg {
+  color: var(--p5-primary) !important;
+}
+
 [class^="containerDefault"]:hover [class^="iconContainer"] {
   background: var(--p5-primary);
 }
@@ -502,6 +514,10 @@
 
 [class^="containerDefault"][class*="selected"] [class^="iconContainer"] {
   background: var(--p5-primary);
+}
+
+[class^="containerDefault"][class*="selected"] [class^="iconContainer"] svg {
+  color: #fff !important;
 }
 
 [class^="containerDefault"][class*="selected"] [class^="content"] {
