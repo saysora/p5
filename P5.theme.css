@@ -759,3 +759,77 @@
 .da-panels .da-container {
   background: rgba(10, 10, 10, 0.3);
 }
+
+/* People List */
+
+[class^="peopleList"]
+  [class^="peopleListItem"]
+  [class^="avatar"]
+  svg
+  foreignObject {
+  mask: url();
+}
+
+[class^="peopleList"] [class^="peopleListItem"] [class^="avatar"] svg rect {
+}
+
+[class^="peopleList"] [class^="peopleListItem"] div[class^="avatar"] {
+  border: 2px solid #fff;
+  border-radius: 2px;
+  background: #000;
+}
+
+[class^="peopleList"]
+  [class^="peopleListItem"]:nth-child(2n + 3)
+  div[class^="avatar"] {
+  transform: rotate(4deg);
+}
+
+[class^="peopleList"]
+  [class^="peopleListItem"]
+  [class^="actions"]
+  [class^="actionButton"] {
+  border-radius: 2px;
+  background: #000;
+  border: 2px solid #fff;
+  transform: rotate(-4deg);
+  color: #fff;
+}
+
+[class^="peopleList"]
+  [class^="peopleListItem"]
+  [class^="actions"]
+  [class^="actionButton"]:nth-child(even) {
+  color: var(--p5-primary);
+}
+[class^="peopleList"]
+  [class^="peopleListItem"]
+  [class^="actions"]
+  [class^="actionButton"]:nth-child(odd) {
+  /* transform: rotate(-4deg); */
+}
+
+/* Popouts */
+
+[id^="popout"] [class^="scroller"] {
+  background: #000;
+  border-radius: 2px;
+  border: 2px solid #fff;
+  transform: skew(-1.5deg);
+}
+
+[id^="popout"] [class^="scroller"] [class^="item"] {
+  color: #fff;
+}
+
+[id^="popout"]
+  [class^="scroller"]
+  [class^="item"]:nth-child(2n + 2)
+  [class^="iconContainer"]
+  [class^="icon"] {
+  color: var(--p5-primary) !important;
+}
+
+[id^="popout"] [class^="scroller"] [class^="item"][class*="focused"] {
+  background: var(--p5-primary);
+}
