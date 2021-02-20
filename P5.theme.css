@@ -629,6 +629,7 @@
 
 .theme-dark .headerNormal-T_seeN {
   background: var(--p5-primary);
+  background: url(https://saysora.github.io/p5/p5star.gif) center center;
 }
 
 .theme-dark .headerNormal-T_seeN [class^="customStatusText"] {
@@ -673,6 +674,23 @@
 }
 
 [class^="userPopout"] [class^="avatarWrapper"] [class^="wrapper"] {
+}
+
+[class^="userPopout"] [class^="headerText"] {
+  background: #fff;
+  border-radius: 2px;
+  border: 2px solid #000;
+  padding: 2px;
+  transform: skewY(3deg);
+  color: var(--p5-primary);
+}
+
+[class^="userPopout"] [class^="headerText"] [class^="username"] {
+  color: var(--p5-primary);
+}
+
+[class^="userPopout"] [class^="headerText"] [class^="username"] + span {
+  color: #000;
 }
 
 [class^="userPopout"] [class^="avatarWrapper"] [class^="wrapper"] svg {
