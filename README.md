@@ -36,3 +36,4 @@ _Message fonts_ is PersonifiedUX credited to MV33izawsm
 #### Questions
 
 Feel free to open an issue here on github if you're having trouble with the theme. You can also contact me through the discord.
+
