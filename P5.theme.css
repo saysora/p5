@@ -455,18 +455,18 @@
 
 /* Activity Panel */
 
-.activityPanel-27dQGo .body-GmmuPm {
+.activityPanel-28dQGo .body-GmmuPm {
   position: relative;
   background: var(--p5-primary);
   border: 2px solid #fff;
   transform: skewY(2deg);
 }
 
-.activityPanel-27dQGo .body-GmmuPm svg {
+.activityPanel-28dQGo .body-GmmuPm svg {
   color: #fff;
 }
 
-.activityPanel-27dQGo .body-GmmuPm::after {
+.activityPanel-28dQGo .body-GmmuPm::after {
   content: "";
   position: absolute;
   width: 0;
