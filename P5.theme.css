@@ -32,6 +32,7 @@
   --p5-primary: #cc0001;
   --hp-green: #00ddb2;
   --mp-pink: #ff66ed;
+  --p5-blue: #40c1fb;
 
   /* Backgrounds */
   --background-primary: #101010;
@@ -97,6 +98,156 @@
 
 .chat-3bRxxu .toolbar-1t6TWx .iconWrapper-2OrFZ1:hover .icon-22AiRD {
   color: var(--p5-primary);
+}
+
+/* Search & Filter */
+
+.resultsGroup-r_nuzN {
+  border-radius: 2px;
+  border: 2px solid #fff;
+  background: #000;
+}
+
+.resultsGroup-r_nuzN .option-96V44q::after {
+  background: linear-gradient(to left, #000 80%, transparent);
+}
+
+.resultsGroup-r_nuzN .option-96V44q .plusIcon-v0BTrL {
+  color: var(--mp-pink);
+}
+
+.resultsGroup-r_nuzN .option-96V44q.selected-rZcOL- {
+  background: #fff;
+  border-radius: 2px;
+}
+
+.resultsGroup-r_nuzN .option-96V44q.selected-rZcOL-::before,
+.resultsGroup-r_nuzN .option-96V44q.selected-rZcOL-::after {
+  background: none;
+}
+
+.resultsGroup-r_nuzN .option-96V44q.selected-rZcOL-::after {
+  background: linear-gradient(90deg, rgba(35, 38, 42, 0), #fff 50%);
+}
+
+.resultsGroup-r_nuzN .option-96V44q.selected-rZcOL- .filter-3Y_im- {
+  color: var(--hp-green);
+}
+
+.resultsGroup-r_nuzN .option-96V44q.selected-rZcOL- .answer-1n6g43 {
+  color: var(--mp-pink);
+}
+
+.resultsGroup-r_nuzN .user-O3Czj0 .displayedNick-3xxvzU {
+  color: var(--p5-primary) !important;
+}
+
+/* Date */
+
+.datePicker--XZbmJ {
+  background: #000;
+}
+
+.datePicker--XZbmJ .calendarPicker-2yf6Ci {
+  background: #000;
+}
+
+.datePicker--XZbmJ .react-datepicker {
+  /* background: #000 !important; */
+  background: #000 url(https://saysora.github.io/p5/calendar.jpg) center / cover !important;
+}
+
+.datePicker--XZbmJ .react-datepicker .react-datepicker__header {
+  border: none;
+  background: none;
+}
+
+.datePicker--XZbmJ
+  .react-datepicker
+  .react-datepicker__header
+  .react-datepicker__day-name {
+  background: #000;
+  padding: 5px 0;
+  color: #fff;
+  font-weight: 600;
+}
+
+.datePicker--XZbmJ .react-datepicker .react-datepicker__month {
+}
+
+.datePicker--XZbmJ
+  .react-datepicker
+  .react-datepicker__month
+  .react-datepicker__day {
+  background: #000;
+}
+
+.datePicker--XZbmJ
+  .react-datepicker
+  .react-datepicker__month
+  .react-datepicker__day--outside-month {
+  /* background: var(--p5-blue); */
+  /* color: #fff; */
+}
+
+.datePicker--XZbmJ
+  .react-datepicker
+  .react-datepicker__month
+  .react-datepicker__day:hover {
+  background: var(--p5-primary);
+  color: #fff;
+}
+
+.datePicker--XZbmJ
+  .react-datepicker
+  .react-datepicker__month
+  .react-datepicker__day.react-datepicker__day--selected {
+  color: #fff;
+}
+
+.datePicker--XZbmJ
+  .react-datepicker
+  .react-datepicker__month
+  .react-datepicker__day.react-datepicker__day--selected:hover {
+  background: var(--p5-blue);
+}
+
+.datePicker--XZbmJ
+  .react-datepicker
+  .react-datepicker__month
+  .react-datepicker__day.react-datepicker__day--selected::after {
+  background: var(--p5-blue);
+}
+
+.datePicker--XZbmJ
+  .react-datepicker
+  .react-datepicker__month
+  .react-datepicker__day.react-datepicker__day--selected
+  + .datePicker--XZbmJ
+  .react-datepicker
+  .react-datepicker__month
+  .react-datepicker__day {
+  color: green;
+}
+
+.searchFilter-2ESiM3 span {
+  background: #fff;
+  color: var(--mp-pink);
+  padding: 0 2px;
+  font-weight: 700;
+}
+
+.searchAnswer-3Dz2-q span {
+  background: #fff;
+  color: var(--hp-green);
+  padding: 0 2px;
+  font-weight: 700;
+}
+
+.datePickerHint-3Q1Udw .hintValue-29ny8Z {
+  background: var(--hp-green) !important;
+  color: #fff;
+  font-weight: 700 !important;
 }
 
 /* Left Column */
@@ -287,6 +438,10 @@
 
 .message-2qnXI6 .buttons-cl5qTG .wrapper-2aW0bm .button-1ZiXG9:hover {
   background: var(--p5-primary);
+}
+
+.lookFilled-1Gx00P.colorGreen-29iAKY {
+  background: var(--hp-green);
 }
 
 /* Date dividers */
@@ -492,7 +647,7 @@
 
 .userPopout-3XzG_A .header-2BwW8b {
   background: var(--p5-primary);
-  background: url(https://saysora.github.io/p5/p5star.gif) center center;
+  background: #fff url(https://saysora.github.io/p5/p5star.gif) center center;
 }
 
 .userPopout-3XzG_A .avatarWrapper-3H_478 svg foreignObject img {
