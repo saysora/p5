@@ -102,6 +102,38 @@
 
 /* Search & Filter */
 
+.searchBar-3dMhjb {
+  background: rgb(12, 12, 12);
+  box-shadow: 0 0 0 2px #fff;
+  border-radius: 2px;
+  color: #fff;
+}
+
+.queryContainer-RKFJW- {
+  background: #000;
+  color: #fff;
+}
+
+.queryContainer-RKFJW-.focused-2bY0OD {
+  background: rgb(12, 12, 12);
+}
+
+.queryContainer-RKFJW- .queryText-3xoOY7 strong {
+  background: #fff;
+  color: var(--mp-pink);
+  padding: 5px;
+}
+
+.queryContainer-RKFJW- .keybindShortcut-1BD6Z1 span {
+  background: var(--p5-primary);
+  color: #fff;
+}
+
+.queryContainer-RKFJW- .keybindShortcut-1BD6Z1:active span {
+  background: #fff;
+  color: var(--p5-primary);
+}
+
 .resultsGroup-r_nuzN {
   border-radius: 2px;
   border: 2px solid #fff;
@@ -252,11 +284,23 @@
 
 /* Left Column */
 
+.guilds-1SWlCJ .tutorialContainer-1v44GL .wrapper-1BJsBx .childWrapper-anI2G9 {
+  background: #000 url(https://saysora.github.io/p5/p5.png) no-repeat center /
+    75%;
+}
+
+.guilds-1SWlCJ
+  .tutorialContainer-1v44GL
+  .wrapper-1BJsBx
+  .childWrapper-anI2G9
+  svg {
+  display: none;
+}
+
 .guilds-1SWlCJ
   .tutorialContainer-1v44GL
   .wrapper-1BJsBx.selected-bZ3Lue
   .childWrapper-anI2G9 {
-  background: #000;
   color: #fff;
 }
 
@@ -286,6 +330,12 @@
 }
 .guilds-1SWlCJ .circleIconButton-jET_ig:hover svg {
   color: #fff;
+}
+
+.bar-30k2ka {
+  background: #000;
+  border-radius: 2px;
+  box-shadow: 0 0 0 2px #fff, -2px -1px 0 2px #fff;
 }
 
 /* Popout Above Guilds */
@@ -974,5 +1024,23 @@
   .footer-3mqk7D
   .button-38aScr[type="submit"]:hover {
   background: var(--p5-primary);
+  color: #fff;
+}
+
+/* Tags */
+
+.botTag-3W9SuW,
+.bot-2Fta1w,
+.botTag-1un5a6 {
+  background: var(--mp-pink);
+}
+
+.botTag-3W9SuW span,
+.bot-2Fta1w span,
+.botTag-1un5a6 span {
+  color: #fff;
+}
+
+.botTagVerified-1klIIt {
   color: #fff;
 }
