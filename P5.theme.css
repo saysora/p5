@@ -375,6 +375,10 @@
 
 /* Friends Page Main Area */
 
+.friendsEmpty-1K9B4k {
+  background: rgba(10, 10, 10, 0.8);
+}
+
 .peopleList-3c4jOR {
   background: rgba(10, 10, 10, 0.8);
 }
@@ -423,6 +427,10 @@
 
 .nowPlayingColumn-2sl4cE .itemCard-v9viV7:nth-child(even) {
   transform: skew(3deg);
+}
+
+.nowPlayingColumn-2sl4cE .itemCard-v9viV7 .section-2gLsgF {
+  background: #101010;
 }
 
 /* Main Message Area */
@@ -498,6 +506,15 @@
 
 .message-2qnXI6 .buttons-cl5qTG .wrapper-2aW0bm .button-1ZiXG9:hover {
   background: var(--p5-primary);
+}
+
+.theme-dark .message-2qRu38 {
+  background: #131313;
+  box-shadow: none;
+}
+
+.theme-dark .message-2qRu38 .disableInteraction-286MMw {
+  background: #131313;
 }
 
 .lookFilled-1Gx00P.colorGreen-29iAKY {
@@ -606,6 +623,14 @@
   .autocompleteInner-zh20B_
   .selected-1Tbx07 {
   background: var(--p5-primary) !important;
+}
+
+.theme-dark .pill-2pQByF {
+  background: var(--hp-green);
+}
+
+.theme-dark .pill-2pQByF span {
+  color: #fff;
 }
 
 /* Channel Column & Below */
@@ -880,7 +905,6 @@
   border: 2px solid #fff;
 }
 
-.focusLock-Ns3yie,
 .focusLock-Ns3yie .modal-2VIBV8 {
   background: #000;
 }
@@ -985,6 +1009,26 @@
 
 .slider-1PF9SW .grabber-3mFHz2 {
   background: var(--p5-blue);
+}
+
+/* Everyone popup */
+
+.theme-dark .everyonePopout-nEbJY3 {
+  background: var(--p5-primary);
+}
+
+.theme-dark .everyonePopout-nEbJY3 .button-1VQp89 {
+  color: #fff;
+  border-color: #fff;
+}
+
+.theme-dark .everyonePopout-nEbJY3 .colorStandard-2KCXvj {
+  color: #fff;
+}
+
+.theme-dark .everyonePopout-nEbJY3 .lookFilled-1Gx00P {
+  background: #fff;
+  color: var(--p5-primary);
 }
 
 /* File Upload Popup */
