@@ -390,7 +390,7 @@
   background: rgba(10, 10, 10, 0.8);
 }
 
-.peopleList-3c4jOR .peopleListItem-2nzedh .avatar-3W3CeO {
+.peopleList-3c4jOR .peopleListItem-2nzedh .avatar-2e8lTP {
   border: 2px solid #fff;
   border-radius: 2px;
   background: #000;
@@ -400,7 +400,7 @@
   transform: rotate(4deg);
 }
 
-.peopleList-3c4jOR .peopleListItem-2nzedh .avatar-3W3CeO svg foreignObject {
+.peopleList-3c4jOR .peopleListItem-2nzedh .avatar-2e8lTP svg foreignObject {
   mask: url();
 }
 
@@ -464,7 +464,7 @@
 
 /* Messages */
 
-.message-2qnXI6 .avatar-1BDn8e {
+.message-2CShn3 .avatar-2e8lTP {
   border-radius: 0;
   background-color: #000;
 
@@ -473,32 +473,32 @@
   overflow: visible;
 }
 
-.message-2qnXI6:nth-child(even) .avatar-1BDn8e {
+.message-2CShn3:nth-child(even) .avatar-2e8lTP {
   transform: rotate(-2deg) skew(3deg);
 }
 
-.message-2qnXI6 .markup-2BOw-j {
+.message-2CShn3 .markup-eYLPri {
   font-family: "Varela Round", sans-serif;
   font-size: 0.85em;
 }
 
-.message-2qnXI6 .markup-2BOw-j span {
+.message-2CShn3 .markup-eYLPri span {
   color: var(--theme);
 }
 
-.message-2qnXI6 .markup-2BOw-j span:hover {
+.message-2CShn3 .markup-eYLPri span:hover {
   background: #fff;
   color: #000;
 }
 
 /* Message Hover Buttons */
 
-.message-2qnXI6 .buttons-cl5qTG .wrapper-2aW0bm {
+.message-2CShn3 .buttons-3dF5Kd .wrapper-2vIMkT {
   border-radius: 0;
   overflow: none;
 }
 
-.message-2qnXI6 .buttons-cl5qTG .wrapper-2aW0bm .button-1ZiXG9 {
+.message-2CShn3 .buttons-3dF5Kd .wrapper-2vIMkT .button-3bklZh {
   border-radius: 2px;
   background: #000;
   color: #fff;
@@ -507,20 +507,20 @@
   padding: 1px;
 }
 
-.message-2qnXI6 .buttons-cl5qTG .wrapper-2aW0bm .button-1ZiXG9:nth-child(even) {
+.message-2CShn3 .buttons-3dF5Kd .wrapper-2vIMkT .button-3bklZh:nth-child(even) {
   transform: rotate(-4deg);
 }
 
-.message-2qnXI6 .buttons-cl5qTG .wrapper-2aW0bm .button-1ZiXG9:hover {
+.message-2CShn3 .buttons-3dF5Kd .wrapper-2vIMkT .button-3bklZh:hover {
   background: var(--theme);
 }
 
-.theme-dark .message-2qRu38 {
+.theme-dark .message-2CShn3 {
   background: var(--primary-dark);
   box-shadow: none;
 }
 
-.theme-dark .message-2qRu38 .disableInteraction-286MMw {
+.theme-dark .message-2CShn3 .disableInteraction-286MMw {
   background: var(--primary-dark);
 }
 
@@ -553,51 +553,52 @@
 
 /* User Message Area */
 
-.channelTextArea-rNsIhG > div {
+ /* .buttons-uaqb-5 */
+
+.channelTextArea-1VQBuV > div {
   border-radius: 0;
-  /* transform: skewX(-4deg); */
+  transform: skewX(-4deg);
 }
 
-.channelTextArea-rNsIhG > div .inner-MADQqc {
-  /* transform: skewX(4deg); */
+.channelTextArea-1VQBuV > div .inner-NQg18Y {
+  transform: skewX(4deg);
 }
 
-.channelTextArea-rNsIhG
+.channelTextArea-1VQBuV
   > div
-  .inner-MADQqc
-  .textArea-12jD-V
-  .markup-2BOw-j
+  .inner-NQg18Y
+  .markup-eYLPri
   span {
   font-size: 0.95em;
 }
 
-.textArea-12jD-V span {
+.markup-eYLPri span {
   color: #000;
   /* font-family: "New P5"; */
   font-family: "Varela Round", sans-serif;
 }
 
-.textArea-12jD-V .placeholder-37qJjk {
+.placeholder-1_mJY1 {
   font-family: "Varela Round", sans-serif;
-  color: #000;
+  color: rgba(0,0,0,0.6);
   font-size: 0.9em;
 }
 
-.channelTextArea-rNsIhG .buttons-3JBrkn button:hover svg path {
+.channelTextArea-1VQBuV .buttons-uaqb-5 button:hover svg path {
   fill: var(--theme);
 }
 
-.channelTextArea-rNsIhG .slateTextArea-1Mkdgw {
+.channelTextArea-1VQBuV .slateTextArea-27tjG0 {
   caret-color: var(--theme);
 }
 
-.channelTextArea-rNsIhG .slateTextArea-1Mkdgw .syntaxBefore-1YQ9lW,
-.channelTextArea-rNsIhG .slateTextArea-1Mkdgw .inlineCode-2ngu6Y,
-.channelTextArea-rNsIhG .slateTextArea-1Mkdgw .syntaxAfter-hcA4AH {
+.channelTextArea-1VQBuV .slateTextArea-27tjG0 .syntaxBefore-3pDAmR,
+.channelTextArea-1VQBuV .slateTextArea-27tjG0 .inlineCode-2auMQi,
+.channelTextArea-1VQBuV .slateTextArea-27tjG0 .syntaxAfter-OxiKEl {
   background: var(--mp-pink);
 }
 
-.channelTextArea-rNsIhG .slateTextArea-1Mkdgw .inlineCode-2ngu6Y span {
+.channelTextArea-1VQBuV .slateTextArea-27tjG0 .inlineCode-2auMQi span {
   color: #fff;
 }
 
@@ -670,8 +671,7 @@
   font-family: "Varela Round", sans-serif;
 }
 
-.containerDefault--pIXnN .iconContainer-1BBaeJ,
-.menu-3sdvDG .scroller-3BxosC .item-1tOPte .iconContainer-2-XQPY {
+.flex-2S1XBF .button-12Fmur {
   background: #000;
   border-radius: 2px;
   /* border: 1px solid #fff; */
@@ -679,27 +679,27 @@
   transform: skewX(4deg);
 }
 
-.containerDefault--pIXnN:nth-child(even) .iconContainer-1BBaeJ {
+.flex-2S1XBF .button-12Fmur:nth-child(even) {
   transform: skewX(-4deg);
 }
 
-.containerDefault--pIXnN .iconContainer-1BBaeJ svg {
+.flex-2S1XBF .button-12Fmur svg {
   color: #fff !important;
 }
 
-.containerDefault--pIXnN:nth-child(2n + 3) .iconContainer-1BBaeJ svg {
+.flex-2S1XBF .button-12Fmur .contents-3ca1mk:nth-child(2n + 3) svg {
   color: var(--theme) !important;
 }
 
-.containerDefault--pIXnN:hover .iconContainer-1BBaeJ {
+.flex-2S1XBF .button-12Fmur:hover {
   background: var(--theme);
 }
 
-.containerDefault--pIXnN:nth-child(2n + 1):hover .iconContainer-1BBaeJ {
+.flex-2S1XBF .button-12Fmur:nth-child(2n + 1):hover {
   background: #fff;
 }
 
-.containerDefault--pIXnN:nth-child(2n + 1):hover .iconContainer-1BBaeJ svg {
+.flex-2S1XBF .button-12Fmur:nth-child(2n + 1):hover .contents-3ca1mk svg {
   color: var(--theme) !important;
 }
 
@@ -772,25 +772,33 @@
 
 /* User Popup */
 
-.userPopout-3XzG_A {
+.userPopout-2j1gM4 {
   font-weight: 700;
 }
 
-.userPopout-3XzG_A .header-2BwW8b {
+.userPopout-2j1gM4 .headerNormal-3Zn_yu .banner-1YaD3N {
   background: var(--theme);
   background: #fff url(https://saysora.github.io/p5/p5star.gif) center center;
 }
 
-.userPopout-3XzG_A .avatarWrapper-3H_478 svg foreignObject img {
+.userPopout-2j1gM4 .avatarWrapper-eenWra .wrapper-1VLyxH {
+  border-radius: 0;
+}
+
+.userPopout-2j1gM4 .avatar-2Vndt_ {
+  border-color: var(--theme);
+}
+
+.userPopout-2j1gM4 .avatarWrapper-eenWra svg foreignObject img {
   mask: url();
   transform: rotate(4deg);
 }
 
-.userPopout-3XzG_A .avatarWrapper-3H_478 .avatarHint-1qgaV3 foreignObject {
+.userPopout-2j1gM4 .avatarWrapper-eenWra .avatarHint-k7pYop foreignObject {
   mask: url();
 }
 
-.userPopout-3XzG_A .avatarWrapper-3H_478 .avatarHint-1qgaV3 foreignObject img {
+.userPopout-2j1gM4 .avatarWrapper-eenWra .avatarHint-k7pYop foreignObject img {
   transform: rotate(4deg);
 }
 
