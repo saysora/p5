@@ -537,12 +537,12 @@
 
 /* Date dividers */
 
-.divider-3_HH5L {
+.divider-IqmEqJ {
   /* border-color: rgba(255, 255, 255, 0.7); */
   border-color: #333;
 }
 
-.divider-3_HH5L .content-1o0f9g {
+.divider-IqmEqJ .content-3spvdd {
   font-family: "New P5";
   font-size: 0.75em;
   color: #000;
@@ -554,8 +554,17 @@
   transform: skew(6deg);
 }
 
-.divider-3_HH5L:nth-child(2n + 1) .content-1o0f9g {
+.divider-IqmEqJ:nth-child(2n + 1) .content-3spvdd {
   transform: skew(-6deg);
+}
+
+.messageContent-2t3eCI .mention {
+  background: var(--p5-primary);
+  color: #fff !important;
+}
+
+.messageContent-2t3eCI .mention:hover {
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 
 /* User Message Area */
@@ -659,6 +668,13 @@
   left: 50%;
   transform: translateX(-50%);
   right: 0;
+}
+
+/* Mention override cause it's too hard to read as is */
+
+.slateTextArea-27tjG0 .mention {
+  background: var(--mp-pink) !important;
+  color: #fff;
 }
 
 /* Channel Column & Below */
