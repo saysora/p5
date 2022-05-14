@@ -389,29 +389,43 @@
 
 /* Friends Page Main Area */
 
+.container-ZMc96U.themed-Hp1KC_ {
+  background: var(--background-secondary);
+}
+
+.theme-dark .children-3xh0VB:after {
+  display: none;
+  
+}
+
+.interactive-1vLZ_I:hover {
+  background: rgba(10,10,10,0.5);
+}
+
+.interactive-1vLZ_I.interactiveSelected-29CP8y.selected-3veCBZ {
+  background: rgba(10,10,10,0.5);
+}
+
 .peopleColumn-1wMU14 {
   background: rgba(10, 10, 10, 0.8);
 }
 
-.peopleList-3c4jOR {
-  background: rgba(10, 10, 10, 0.8);
-}
 
-.peopleList-3c4jOR .peopleListItem-2nzedh .avatar-2e8lTP {
+.peopleList-2VBrVI .peopleListItem-u6dGxF .avatar-2e8lTP {
   border: 2px solid #fff;
   border-radius: 2px;
   background: #000;
 }
 
-.peopleList-3c4jOR .peopleListItem-2nzedh:nth-child(2n + 3) .avatar-3W3CeO {
+.peopleList-2VBrVI .peopleListItem-u6dGxF:nth-child(2n + 3) .avatar-3W3CeO {
   transform: rotate(4deg);
 }
 
-.peopleList-3c4jOR .peopleListItem-2nzedh .avatar-2e8lTP svg foreignObject {
+.peopleList-2VBrVI .peopleListItem-u6dGxF .avatar-2e8lTP svg foreignObject {
   mask: url();
 }
 
-.peopleList-3c4jOR .peopleListItem-2nzedh .actions-1SQwjn .actionButton-uPB8Fs {
+.peopleList-2VBrVI .peopleListItem-u6dGxF .actions-1SQwjn .actionButton-uPB8Fs {
   border-radius: 2px;
   background: #000;
   border: 2px solid #fff;
@@ -419,8 +433,12 @@
   color: #fff;
 }
 
-.peopleList-3c4jOR
-  .peopleListItem-2nzedh
+.peopleList-2VBrVI .peopleListItem-u6dGxF:hover {
+  background: rgba(10,10,10,0.8);
+}
+
+.peopleList-2VBrVI
+  .peopleListItem-u6dGxF
   .actions-1SQwjn
   .actionButton-uPB8Fs:nth-child(even) {
   color: var(--theme);
@@ -496,6 +514,15 @@
 .message-2CShn3 .markup-eYLPri span:hover {
   background: #fff;
   color: #000;
+}
+
+.contents-2MsGLg .markup-eYLPri > span {
+  color: #fff;
+}
+
+.contents-2MsGLg .markup-eYLPri > span > span.highlight {
+  background: var(--p5-primary);
+  color: #fff;
 }
 
 /* Message Hover Buttons */
