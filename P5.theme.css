@@ -1,6 +1,6 @@
 /**
     * @name Persona 5
-    * @version 1.0
+    * @version 1.1
     * @description Persona 5 Color Scheme for Better Discord
     * @author saysora
     * @website https://github.com/saysora
@@ -72,7 +72,7 @@
 
 /* Top Area */
 
-.chat-2ZfjoI .toolbar-3_r2xA .clickable-ZD7xvu {
+section[aria-label="Channel header"] > div > div:last-child div[role="button"] {
   background: #000;
   border-radius: 2px;
   border: 2px solid #fff;
@@ -80,11 +80,11 @@
   transform: rotate(4deg);
 }
 
-.chat-2ZfjoI .toolbar-3_r2xA .clickable-ZD7xvu:nth-child(even) {
+section[aria-label="Channel header"] > div > div:last-child div[role="button"]:nth-child(even) {
   transform: rotate(-4deg);
 }
 
-.chat-2ZfjoI .toolbar-3_r2xA .clickable-ZD7xvu .icon-2xnN2Y {
+section[aria-label="Channel header"] > div > div:last-child div[role="button"] svg {
   padding: 1px;
   box-sizing: border-box;
   width: 20px;
@@ -92,20 +92,19 @@
   color: #fff;
 }
 
-.chat-2ZfjoI .toolbar-3_r2xA .clickable-ZD7xvu.selected-29KTGM {
+section[aria-label="Channel header"] > div > div:last-child div[role="button"][aria-expanded="true"] {
   background: var(--background-accent);
 }
 
-.chat-2ZfjoI
-  .toolbar-3_r2xA
-  .clickable-ZD7xvu:nth-child(2n + 3).selected-29KTGM {
+section[aria-label="Channel header"] > div > div:last-child div[role="button"][aria-expanded="true"]:nth-child(2n + 3) {
   background: #fff;
 }
 
-.chat-2ZfjoI .toolbar-3_r2xA .clickable-ZD7xvu:nth-child(2n + 3) .icon-2xnN2Y {
+section[aria-label="Channel header"] > div > div:last-child div[role="button"][aria-expanded="true"]:nth-child(2n + 3) svg {
   color: var(--theme);
 }
 
+/* Dunno what I'm doing with these atm */
 .chat-2ZfjoI .toolbar-3_r2xA .clickable-ZD7xvu:hover {
   background: #fff;
 }
@@ -131,11 +130,15 @@ section[role="navigation"] {
 
 /* Search & Filter */
 
-.searchBar-zdmu7v {
+.searchBar_e0c60b {
   background: rgb(12, 12, 12);
   box-shadow: 0 0 0 2px #fff;
   border-radius: 2px;
   color: #fff;
+}
+
+.searchBar_e0c60b div[role="button"] {
+    border: none !important;
 }
 
 .queryContainer-ZunrLZ {
@@ -313,31 +316,25 @@ section[role="navigation"] {
 
 /* Left Column */
 
-.guilds-2JjMmN .tutorialContainer-1pL9QS .wrapper-3kah-n .childWrapper-1j_1ub {
+div[data-list-item-id="guildsnav___home"] > div {
   background: #000 url(https://saysora.github.io/p5/p5.png) no-repeat center /
-    75%;
+    75% !important;
 }
 
-.guilds-2JjMmN
-  .tutorialContainer-1pL9QS
-  .wrapper-3kah-n
-  .childWrapper-1j_1ub
-  svg {
+div[data-list-item-id="guildsnav___home"] svg {
   display: none;
 }
 
-.guilds-2JjMmN
-  .tutorialContainer-1pL9QS
-  .wrapper-3kah-n.selected-bZ3Lue
-  .childWrapper-1j_1ub {
+
+.tutorialContainer_dc6fde {
   color: #fff;
 }
 
-.guilds-2JjMmN .lowerBadge-3WTshO {
+.lowerBadge_669e7 {
   background: var(--theme);
 }
 
-.guilds-2JjMmN .lowerBadge-3WTshO .numberBadge-37OJ3S {
+.lowerBadge_669e7 > div {
   background: var(--theme) !important;
   color: #fff;
 }
@@ -346,18 +343,13 @@ section[role="navigation"] {
   background: rgba(10, 10, 10, 0.5) !important;
 }
 
-.guilds-2JjMmN .circleIconButton-jET_ig {
+.tutorialContainer_dc6fde svg div, .listItem_fa7b36 svg div {
   background: #fff;
-}
-
-.guilds-2JjMmN .circleIconButton-jET_ig svg {
   color: var(--hp-green);
 }
 
-.guilds-2JjMmN .circleIconButton-jET_ig:hover {
+.tutorialContainer_dc6fde svg:hover div, .listItem_fa7b36 svg:hover div {
   background: var(--mp-pink);
-}
-.guilds-2JjMmN .circleIconButton-jET_ig:hover svg {
   color: #fff;
 }
 
@@ -414,22 +406,28 @@ section[role="navigation"] {
   background: rgba(10, 10, 10, 0.8);
 }
 
-
-.peopleList-2VBrVI .peopleListItem-u6dGxF .avatar-2e8lTP {
+nav[aria-label="Private channels"] ul[role="list"] li[role="listitem"] div[role="img"],
+div[data-list-id="people-list"] div[role="listitem"] div[role="img"] {
   border: 2px solid #fff;
   border-radius: 2px;
   background: #000;
 }
 
-.peopleList-2VBrVI .peopleListItem-u6dGxF:nth-child(2n + 3) .avatar-3W3CeO {
+nav[aria-label="Private channels"] ul[role="list"] li[role="listitem"] div[role="img"] {
+    overflow: hidden;
+}
+
+nav[aria-label="Private channels"] ul[role="list"] li[role="listitem"]:nth-child(2n+3) div[role="img"],
+div[data-list-id="people-list"] div[role="listitem"]:nth-child(2n + 3) div[role="img"] {
   transform: rotate(4deg);
 }
 
-.peopleList-2VBrVI .peopleListItem-u6dGxF .avatar-2e8lTP svg foreignObject {
+nav[aria-label="Private channels"] ul[role="list"] li[role="listitem"] div[role="img"] svg foreignObject,
+div[data-list-id="people-list"] div[role="listitem"] div[role="img"] svg foreignObject {
   mask: url();
 }
 
-.peopleList-2VBrVI .peopleListItem-u6dGxF .actions-1SQwjn .actionButton-uPB8Fs {
+div[data-list-id="people-list"] div[role="listitem"] div[role="button"] {
   border-radius: 2px;
   background: #000;
   border: 2px solid #fff;
@@ -437,18 +435,15 @@ section[role="navigation"] {
   color: #fff;
 }
 
-.peopleList-2VBrVI .peopleListItem-u6dGxF:hover {
+div[data-list-id="people-list"] div[role="listitem"] {
   background: rgba(10,10,10,0.8);
 }
 
-.peopleList-2VBrVI
-  .peopleListItem-u6dGxF
-  .actions-1SQwjn
-  .actionButton-uPB8Fs:nth-child(even) {
+div[data-list-id="people-list"] div[role="listitem"] div[role="button"]:nth-child(even) {
   color: var(--theme);
 }
 
-/* Now Playing */
+/* Now Playing maybe someday I'll return to this */
 
 .nowPlayingColumn-2sl4cE {
   background: #000;
@@ -479,7 +474,7 @@ section[role="navigation"] {
   background: var(--primary-alt);
 }
 
-.emptyChannelIcon-1YdEz2 {
+.emptyChannelIcon__1a1ba {
   border-radius: 0;
   background-color: #000;
   border-radius: 2px;
@@ -487,13 +482,13 @@ section[role="navigation"] {
   transform: rotate(-4deg);
 }
 
-.emptyChannelIcon-1YdEz2 svg {
+.emptyChannelIcon__1a1ba svg {
   color: #000 !important;
 }
 
 /* Messages */
 
-.message-2CShn3 .avatar-2e8lTP {
+ol[data-list-id="chat-messages"] div[role="article"] > div > img {
   border-radius: 0;
   background-color: #000;
 
@@ -502,20 +497,21 @@ section[role="navigation"] {
   overflow: visible;
 }
 
-.message-2CShn3:nth-child(even) .avatar-2e8lTP {
+ol[data-list-id="chat-messages"] div[role="article"]:nth-child(even) > div > img {
   transform: rotate(-2deg) skew(3deg);
 }
 
-.message-2CShn3 .markup-eYLPri {
+ol[data-list-id="chat-messages"] div[role="article"] h3 {
   font-family: "Varela Round", sans-serif;
   font-size: 0.85em;
 }
 
-.message-2CShn3 .markup-eYLPri span {
+ol[data-list-id="chat-messages"] div[role="article"] h3 {
   color: var(--theme);
 }
 
-.message-2CShn3 .markup-eYLPri span:hover {
+/* Commented out for now 
+ol[data-list-id="chat-messages"] div[role="article"] span:hover {
   background: #fff;
   color: #000;
 }
@@ -528,15 +524,16 @@ section[role="navigation"] {
   background: var(--p5-primary);
   color: #fff;
 }
+*/
 
 /* Message Hover Buttons */
 
-.message-2CShn3 .buttons-3dF5Kd .wrapper-2vIMkT {
+ol[data-list-id="chat-messages"] div[role="article"] div[aria-label="Message Actions"] > div {
   border-radius: 0;
   overflow: none;
 }
 
-.message-2CShn3 .buttons-3dF5Kd .wrapper-2vIMkT .button-3bklZh {
+ol[data-list-id="chat-messages"] div[role="article"] div[aria-label="Message Actions"] div[role="button"] {
   border-radius: 2px;
   background: #000;
   color: #fff;
@@ -545,15 +542,15 @@ section[role="navigation"] {
   padding: 1px;
 }
 
-.message-2CShn3 .buttons-3dF5Kd .wrapper-2vIMkT .button-3bklZh:nth-child(even) {
+ol[data-list-id="chat-messages"] div[role="article"] div[aria-label="Message Actions"] div[role="button"]:nth-child(even) {
   transform: rotate(-4deg);
 }
 
-.message-2CShn3 .buttons-3dF5Kd .wrapper-2vIMkT .button-3bklZh:hover {
+ol[data-list-id="chat-messages"] div[role="article"] div[aria-label="Message Actions"] div[role="button"]:hover {
   background: var(--theme);
 }
 
-.theme-dark .message-2CShn3 {
+ol[data-list-id="chat-messages"] div[role="article"] {
   background: var(--primary-dark);
   box-shadow: none;
 }
@@ -568,12 +565,12 @@ section[role="navigation"] {
 
 /* Date dividers */
 
-.divider-IqmEqJ {
+ol[data-list-id="chat-messages"] div[role="separator"]:has(span) {
   /* border-color: rgba(255, 255, 255, 0.7); */
   border-color: #333;
 }
 
-.divider-IqmEqJ .content-3spvdd {
+ol[data-list-id="chat-messages"] div[role="separator"] span {
   font-family: "New P5";
   font-size: 0.75em;
   color: #000;
@@ -585,20 +582,22 @@ section[role="navigation"] {
   transform: skew(6deg);
 }
 
-.divider-IqmEqJ:nth-child(2n + 1) .content-3spvdd {
+ol[data-list-id="chat-messages"] div[role="separator"]:nth-child(2n + 1) span {
   transform: skew(-6deg);
 }
 
-.messageContent-2t3eCI .mention {
+ol[data-list-id="chat-messages"] div[role="article"] > div > div span[role="button"] {
   background: var(--p5-primary);
   color: #fff !important;
 }
 
-.messageContent-2t3eCI .mention:hover {
+ol[data-list-id="chat-messages"] div[role="article"] > div > div span[role="button"]:hover {
   background: rgba(0, 0, 0, 0.6) !important;
 }
 
 /* User Message Area */
+
+/* REVISIT LATER */
 
 /* .buttons-uaqb-5 */
 
@@ -711,11 +710,12 @@ section[role="navigation"] {
   fill: #fff;
 }
 
-.containerDefault-YUSmu3 {
+#channels ul li {
   font-family: "Varela Round", sans-serif;
 }
 
-.containerDefault-YUSmu3 .iconContainer-21RCa3 {
+#channels ul li div[role="img"],
+#channels ul li div > svg[role="img"]:not([width="18"]) {
   background: #000;
   border-radius: 2px;
   /* border: 1px solid #fff; */
@@ -723,29 +723,36 @@ section[role="navigation"] {
   transform: skewX(4deg);
 }
 
-.containerDefault-YUSmu3:nth-child(even) .iconContainer-21RCa3 {
-  transform: skewX(-4deg);
-}
-
-.containerDefault-YUSmu3 .iconContainer-21RCa3 svg {
+#channels ul li div svg[role="img"]:not([width="18"]) {
   color: #fff !important;
 }
 
-.containerDefault-YUSmu3:nth-child(2n + 3) .iconContainer-21RCa3 svg {
+#channels ul li:nth-child(even) div[role="img"],
+#channels ul li:nth-child(even) div > svg[role="img"]:not([width="18"]) {
+  transform: skewX(-4deg);
+}
+
+#channels ul li div[role="img"] svg {
+  color: #fff !important;
+}
+
+#channels ul li:nth-child(2n + 3) div[role="img"] svg {
   color: var(--theme) !important;
 }
 
-.containerDefault-YUSmu3:hover .iconContainer-21RCa3 {
+#channels ul li:hover div[role="img"] svg {
   background: var(--theme);
 }
 
-.containerDefault-YUSmu3:nth-child(2n + 1):hover .iconContainer-21RCa3 {
-  background: #fff;
+#channels ul li:nth-child(2n + 1):hover div[role="img"] {
 }
 
-.containerDefault-YUSmu3:nth-child(2n + 1):hover .iconContainer-21RCa3 svg {
+#channels ul li:nth-child(2n + 1):hover div[role="img"] svg {
+  background: #fff !important;
   color: var(--theme) !important;
 }
+
+/* Stuff below is legacy and doesn't work */
 
 .containerDefault-YUSmu3.selected-2TbFuo .iconContainer-21RCa3 {
   background: var(--theme);
@@ -760,18 +767,19 @@ section[role="navigation"] {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.panels-3wFtMD .flex-2S1XBF .button-12Fmur {
+/* User panel */
+section[aria-label="User area"] button[type="button"] {
   transform: rotate(2deg);
   color: #fff;
   border: 2px solid #fff;
   border-radius: 2px;
 }
 
-.panels-3wFtMD .flex-2S1XBF .button-12Fmur:nth-child(even) {
+section[aria-label="User area"] button[type="button"]:nth-child(even) {
   transform: rotate(-4deg);
 }
 
-.panels-3wFtMD .flex-2S1XBF .button-12Fmur:hover {
+section[aria-label="User area"] button[type="button"]:hover {
   background: #fff;
   color: var(--theme);
 }
