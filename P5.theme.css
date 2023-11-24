@@ -1,6 +1,6 @@
 /**
     * @name Persona 5
-    * @version 1.10.0
+    * @version 1.10.0a
     * @description Persona 5 Color Scheme for Better Discord
     * @author saysora
     * @website https://github.com/saysora
@@ -490,8 +490,6 @@ div[data-list-id="people-list"] div[role="listitem"] div[role="button"]:nth-chil
 
 ol[data-list-id="chat-messages"] div[role="article"] > div > img {
   border-radius: 0;
-  background-color: #000;
-
   border: 2px solid #fff;
   transform: rotate(-4deg) skew(3deg);
   overflow: visible;
@@ -586,12 +584,12 @@ ol[data-list-id="chat-messages"] div[role="separator"]:nth-child(2n + 1) span {
   transform: skew(-6deg);
 }
 
-ol[data-list-id="chat-messages"] div[role="article"] > div > div span[role="button"] {
+ol[data-list-id="chat-messages"] div[role="article"] > div > div span[role="button"]:has(:not(img)) {
   background: var(--p5-primary);
   color: #fff !important;
 }
 
-ol[data-list-id="chat-messages"] div[role="article"] > div > div span[role="button"]:hover {
+ol[data-list-id="chat-messages"] div[role="article"] > div > div span[role="button"]:has(:not(img)):hover {
   background: rgba(0, 0, 0, 0.6) !important;
 }
 
