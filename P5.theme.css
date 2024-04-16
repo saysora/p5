@@ -424,7 +424,7 @@ div[data-list-id="people-list"] div[role="listitem"]:nth-child(2n + 3) div[role=
 
 nav[aria-label="Private channels"] ul[role="list"] li[role="listitem"] div[role="img"] svg foreignObject,
 div[data-list-id="people-list"] div[role="listitem"] div[role="img"] svg foreignObject {
-  mask: url();
+  mask: none;
 }
 
 div[data-list-id="people-list"] div[role="listitem"] div[role="button"] {
@@ -599,53 +599,57 @@ ol[data-list-id="chat-messages"] div[role="article"] > div > div span[role="butt
 
 /* .buttons-uaqb-5 */
 
-.channelTextArea__56a36 > div {
+.channelTextArea__648e5 > div {
   border-radius: 0;
   transform: skewX(-4deg);
 }
 
-.channelTextArea__56a36 > div .inner__9fd0b {
+.channelTextArea__648e5 > div .inner__9fd0b {
   transform: skewX(4deg);
 }
 
-.channelTextArea__56a36 {
+.channelTextArea__648e5 {
   font-size: 0.95em;
   /* font-family: "New P5"; */
   font-family: "Varela Round", sans-serif;
 }
 
-.channelTextArea__56a36 div[data-slate-editor] {
+div[data-slate-editor=true][data-slate-node=value] {
   color: #000;
 }
 
 
-.channelTextArea__56a36 button:hover svg path {
+.channelTextArea__648e5 button:hover svg path {
   fill: var(--theme);
 }
 
-.channelTextArea__56a36 .slateTextArea-27tjG0 {
+.channelTextArea__648e5 .slateTextArea_b19976 {
   caret-color: var(--theme);
 }
 
-.channelTextArea__56a36  [data-slate-node="element"] > [data-slate-node="element"] {
+.channelTextArea__648e5  [data-slate-node=element] > [data-slate-node=element] {
   color: #fff;
   background: var(--mp-pink);
 }
 
-.channelTextArea-1VQBuV .slateTextArea-27tjG0 .inlineCode-2auMQi span {
+.channelTextArea__648e5  .inlineCode__0cacf span {
   color: #fff;
 }
 
+.codeLine__10acb {
+  color: #000;
+}
+
 /* / Command Area */
-.channelTextArea-1VQBuV .autocomplete-3NRXG8 {
+.channelTextArea__648e5 .autocomplete-3NRXG8 {
   transform: skewX(-2deg);
 }
 
-.channelTextArea-1VQBuV .autocomplete-3NRXG8 .autocompleteInner-y1mjDl {
+.channelTextArea__648e5 .autocomplete-3NRXG8 .autocompleteInner-y1mjDl {
   background: var(--background-secondary);
 }
 
-.channelTextArea-1VQBuV
+.channelTextArea__648e5
   .autocomplete-3NRXG8
   .autocompleteInner-y1mjDl
   .categorySection-3hl0bM
@@ -653,7 +657,7 @@ ol[data-list-id="chat-messages"] div[role="article"] > div > div span[role="butt
   background: none;
 }
 
-.channelTextArea-1VQBuV
+.channelTextArea__648e5
   .autocomplete-3NRXG8
   .autocompleteInner-y1mjDl
   .infoWrapper-33i2RS
@@ -661,7 +665,7 @@ ol[data-list-id="chat-messages"] div[role="article"] > div > div span[role="butt
   color: #fff;
 }
 
-.channelTextArea-1VQBuV
+.channelTextArea__648e5
   .autocomplete-3NRXG8
   .autocompleteInner-y1mjDl
   .selected-3H3-RC {
