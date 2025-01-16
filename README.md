@@ -8,6 +8,12 @@ I think, for the sake of helping people troubleshoot and or feature updates rega
 
 [<img src="https://discordapp.com/api/guilds/809893441139507250/embed.png" />](https://discord.gg/dAqZ4abMnB)
 
+## Black Cat Tavern Community Discord
+
+> An active friendly discord community focused on video games and fantasy.
+
+[<img src="https://discordapp.com/api/guilds/1246299197301461003/embed.png" />](https://discord.gg/83uXScnuHm)
+
 ## Features
 
 - Darker UI
