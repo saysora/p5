@@ -12,7 +12,7 @@ I think, for the sake of helping people troubleshoot and or feature updates rega
 
 > An active friendly discord community focused on video games and fantasy.
 
-[<img src="https://discordapp.com/api/guilds/1246299197301461003/embed.png" />](https://discord.gg/83uXScnuHm)
+[Join](https://discord.gg/83uXScnuHm)
 
 ## Features
 
