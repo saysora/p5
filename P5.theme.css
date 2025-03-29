@@ -1,14 +1,13 @@
 /**
     * @name Persona 5
-    * @version 1.10.0b
+    * @version 2.0.0
     * @description Persona 5 Color Scheme for Better Discord
     * @author saysora
     * @website https://github.com/saysora
     * @source https://github.com/saysora/p5
 */
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* Import Varela Font */
-@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
 @font-face {
   font-family: "P5";
   src: url("https://saysora.github.io/p5/p5hatty.ttf");
@@ -28,7 +27,25 @@
 }
 
 :root {
-  --theme: var(--p5-primary);
+  /* 2.0.0 */
+
+  --p5-main-font: "Arsenal", sans-serif;
+  --p5-style-font: "New P5";
+  --p5-darkest: #000;
+  --p5-lightest: #fefefe;
+
+/* Colors */
+--p5-accent: #ba0607;
+--p5-accent-bright: #f80000;
+/* --accent: #de0000; */
+/*--accent: #d92323; */
+--p5-accent-alt: #732424;
+
+--bg-base-tertiary: var(--p5-accent) !important;
+--icon-tertiary: var(--p5-lightest) !important;
+--bg-brand: var(--p5-accent-bright) !important;
+
+--theme: var(--p5-primary);
 
   /* New Main Color */
   --p5-primary: #cc0001;
@@ -68,6 +85,18 @@
 
   /* Focus */
   -focus-primary: #fff;
+
+}
+
+/* Discord updated design */
+.visual-refresh {
+  .sidebarList_c48ade {
+    border-top: none;
+  }
+
+  .sidebar_c48ade:after {
+    background: transparent;
+  }
 }
 
 /* Top Area */
@@ -500,7 +529,7 @@ ol[data-list-id="chat-messages"] div[role="article"]:nth-child(even) > div > img
 }
 
 ol[data-list-id="chat-messages"] div[role="article"] h3 {
-  font-family: "Varela Round", sans-serif;
+  font-family: var(--p5-main-font);
   font-size: 0.85em;
 }
 
@@ -563,21 +592,71 @@ ol[data-list-id="chat-messages"] div[role="article"] {
 
 /* Date dividers */
 
-ol[data-list-id="chat-messages"] div[role="separator"]:has(span) {
+.divider__5126c:has(span) {
   /* border-color: rgba(255, 255, 255, 0.7); */
-  border-color: #333;
+  background: none !important;
+  position: relative;
+  border: none !important;
 }
 
-ol[data-list-id="chat-messages"] div[role="separator"] span {
-  font-family: "New P5";
+.divider__5126c:has(span):after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+
+  --a: 90deg; /* control the angle */
+  --s: 15px; /* size of the zig-zag */
+  --b: 5px;  /* control the thickness */
+  
+  background: var(--p5-lightest);
+  height: calc(var(--b) + var(--s)/(2*tan(var(--a)/2)));
+  width: 100%;
+  --_g:var(--s) repeat-x conic-gradient(from calc(var(--a)/-2) at bottom,
+    #0000,#000 1deg calc(var(--a) - 1deg),#0000 var(--a));
+  mask: 50% calc(-1*var(--b))/var(--_g) exclude,50%/var(--_g);
+}
+
+.divider__5126c:has(span) .content__908e2 {
+  font-family: var(--p5-style-font);
   font-size: 0.75em;
-  color: #000;
-  background: #fff;
   letter-spacing: 3px;
   border-radius: 2px;
-  border: 2px solid #000;
   padding: 5px;
-  transform: skew(6deg);
+
+  position: relative;
+  background: var(--p5-darkest);
+  color: var(--p5-lightest);
+  border: 2px solid var(--p5-lightest);
+
+  transform-style: preserve-3d;
+  transform: skew(344deg);
+}
+
+.divider__5126c:has(span) .content__908e2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--p5-lightest);
+  transform: translateZ(-1px);
+}
+
+.divider__5126c:has(span) .content__908e2:before {
+   --p: 8px; /* control the shape (can be percentage) */
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: calc(84% + var(--p));
+  height: 100%;
+
+  border: 2px solid var(--p5-lightest);
+
+  background: var(--p5-lightest);
+  aspect-ratio: 1;
+  clip-path: polygon(0 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+  transform: translateZ(-1px) skew(0);
 }
 
 ol[data-list-id="chat-messages"] div[role="separator"]:nth-child(2n + 1) span {
@@ -611,7 +690,7 @@ ol[data-list-id="chat-messages"] div[role="article"] > div > div span[role="butt
 .channelTextArea__648e5 {
   font-size: 0.95em;
   /* font-family: "New P5"; */
-  font-family: "Varela Round", sans-serif;
+  font-family: var(--p5-main-font);
 }
 
 div[data-slate-editor=true][data-slate-node=value] {
@@ -713,7 +792,7 @@ div[data-slate-editor=true][data-slate-node=value] {
 }
 
 #channels ul li {
-  font-family: "Varela Round", sans-serif;
+  font-family: var(--p5-main-font);
 }
 
 #channels ul li div[role="img"],
@@ -1235,3 +1314,4 @@ section[aria-label="User area"] button[type="button"]:hover {
 .botTagVerified-1klIIt {
   color: #fff;
 }
+
