@@ -1,6 +1,6 @@
 /**
     * @name Persona 5
-    * @version 2.0.0
+    * @version 2.0.0-beta-1
     * @description Persona 5 Color Scheme for Better Discord
     * @author saysora
     * @website https://github.com/saysora
@@ -28,11 +28,14 @@
 
 :root {
   /* 2.0.0 */
-
   --p5-main-font: "Arsenal", sans-serif;
   --p5-style-font: "New P5";
+  --p5-fat-font: "Franklin Gothic";
   --p5-darkest: #000;
+  --p5-dark: #111;
   --p5-lightest: #fefefe;
+
+  --p5-main-bg: url(https://saysora.github.io/p5/p5-main-menu.png);
 
 /* Colors */
 --p5-accent: #ba0607;
@@ -40,10 +43,34 @@
 /* --accent: #de0000; */
 /*--accent: #d92323; */
 --p5-accent-alt: #732424;
+--p5-accent-royal: #eae4b4;
 
+
+/* Discord theme overrides */
 --bg-base-tertiary: var(--p5-accent) !important;
+
 --icon-tertiary: var(--p5-lightest) !important;
+
 --bg-brand: var(--p5-accent-bright) !important;
+
+--status-danger: var(--p5-accent-bright) !important;
+
+/* Background overrides */
+--background-base-lower: var(--p5-darkest) !important;
+--background-base-lowest: var(--p5-darkest) !important;
+--custom-channel-members-bg: var(--p5-darkest);
+
+/* Border override */
+--border-subtle: rgba(255,255,255,0.8) !important;
+
+
+/* Mentions */
+
+--mention-background: var(--p5-accent) !important;
+--mention-foreground: var(--p5-lightest) !important;
+
+/* Other */
+--channels-default: rgba(255,255,255,0.7) !important;
 
 --theme: var(--p5-primary);
 
@@ -64,6 +91,7 @@
   --background-secondary-alt: var(--primary-alt);
   --background-accent: var(--theme);
   --background-tertiary: var(--theme);
+  --background-surface-high: #3e3e3e !important;
 
   /* Channel Text Area */
   --channeltextarea-background: #fff;
@@ -90,6 +118,9 @@
 
 /* Discord updated design */
 .visual-refresh {
+  /* Lower level var overrides */
+  --background-surface-high: #3e3e3e;
+
   .sidebarList_c48ade {
     border-top: none;
   }
@@ -97,7 +128,149 @@
   .sidebar_c48ade:after {
     background: transparent;
   }
+
+/* Guild bar */
+
+/*  .lowerBadge_cc5dd2 {
+    --status-danger: var(--p5-lightest) !important;
+  }
+*/
+
+/*  .numberBadge__2b1f5 {
+    color: var(--p5-darkets);
+  }
+*/
+
+  .pill_e5445c .item__58105 {
+    background-color: var(--p5-lightest);
+  }
+
+  .folder__48112 {
+    background: var(--p5-accent-alt);
+  }
+
+  .folder__48112.hover__48112 {
+    background: var(--p5-li8htest);
+  };
+
+  .expandedFolderIconWrapper__48112 {
+    background: var(--p5-lightest);
+    svg {
+      color: var(--p5-accent-bright) !important;
+    }
+  }
+
+  .standardSidebarView__23e6b {
+    background: var(--p5-accent) var(--p5-main-bg) center / cover;
+  }
+
+ .contentRegion__23e6b,
+ .sidebarRegionScroller__23e6b  {
+    background: rgba(0,0,0,0.8);
+ }
+
+ .contentRegionScroller__23e6b {
+    background: transparent;
+ }
+
+  .mention.interactive:hover,.channelMention.interactive:hover {
+    background: var(--p5-accent-bright);
+  }
+
+  /* embeds */
+  .embedFull__623de, .wrapper_d5f3cd {
+    --background-surface-high: var(--p5-dark);
+  }
+
 }
+
+/* Channel List */
+.header_f37cb1 {
+  height: calc(var(--custom-channel-header-height) + 1px) !important;
+}
+
+.defaultColor__4bd52, .name__2ea32 {
+  font-family: var(--p5-fat-font);
+}
+
+/* Main Chat */
+
+/* Date dividers */
+
+.divider__5126c:has(.content__908e2) {
+  background: none !important;
+  position: relative;
+  border: none !important;
+}
+
+.divider__5126c:has(.content__908e2):after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+
+  --a: 90deg;
+  --s: 10px; 
+  --b: 5px;
+  
+  background: var(--p5-lightest);
+  height: calc(var(--b) + var(--s)/(2*tan(var(--a)/2)));
+  width: 100%;
+  --_g:var(--s) repeat-x conic-gradient(from calc(var(--a)/-2) at bottom,
+    #0000,#000 1deg calc(var(--a) - 1deg),#0000 var(--a));
+  mask: 50% calc(-1*var(--b))/var(--_g) exclude,50%/var(--_g);
+}
+
+.divider__5126c:has(.content__908e2) .content__908e2 {
+  font-family: var(--p5-fat-font);
+  font-size: 0.75em;
+  letter-spacing: 3px;
+  border-radius: 2px;
+  padding: 5px;
+
+  position: relative;
+  background: var(--p5-darkest);
+  color: var(--p5-lightest);
+  border: 2px solid var(--p5-lightest);
+
+  transform-style: preserve-3d;
+  transform: skew(344deg);
+}
+
+.divider__5126c:has(span) .content__908e2:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--p5-lightest);
+  transform: translateZ(-1px);
+}
+
+.divider__5126c:has(span) .content__908e2:before {
+   --p: 8px;
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: calc(84% + var(--p));
+  height: 100%;
+
+  border: 2px solid var(--p5-lightest);
+
+  background: var(--p5-lightest);
+  aspect-ratio: 1;
+  clip-path: polygon(0 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+  transform: translateZ(-1px) skew(0);
+}
+
+/* Member List */
+
+
+
+/* Menu UIS */
+
+
+/* ----- OLD BELOW -----*/
 
 /* Top Area */
 
@@ -496,7 +669,7 @@ div[data-list-id="people-list"] div[role="listitem"] div[role="button"]:nth-chil
 /* Main Message Area */
 
 .chat-2ZfjoI {
-  background: var(--primary-dark);
+  background: var(--p5-darkest);
 }
 
 .chat-2ZfjoI .title-3qD0b- {
@@ -578,7 +751,7 @@ ol[data-list-id="chat-messages"] div[role="article"] div[aria-label="Message Act
 }
 
 ol[data-list-id="chat-messages"] div[role="article"] {
-  background: var(--primary-dark);
+  background: var(--p5-darkest);
   box-shadow: none;
 }
 
@@ -590,86 +763,9 @@ ol[data-list-id="chat-messages"] div[role="article"] {
   background: var(--hp-green);
 }
 
-/* Date dividers */
-
-.divider__5126c:has(span) {
-  /* border-color: rgba(255, 255, 255, 0.7); */
-  background: none !important;
-  position: relative;
-  border: none !important;
-}
-
-.divider__5126c:has(span):after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-
-  --a: 90deg; /* control the angle */
-  --s: 15px; /* size of the zig-zag */
-  --b: 5px;  /* control the thickness */
-  
-  background: var(--p5-lightest);
-  height: calc(var(--b) + var(--s)/(2*tan(var(--a)/2)));
-  width: 100%;
-  --_g:var(--s) repeat-x conic-gradient(from calc(var(--a)/-2) at bottom,
-    #0000,#000 1deg calc(var(--a) - 1deg),#0000 var(--a));
-  mask: 50% calc(-1*var(--b))/var(--_g) exclude,50%/var(--_g);
-}
-
-.divider__5126c:has(span) .content__908e2 {
-  font-family: var(--p5-style-font);
-  font-size: 0.75em;
-  letter-spacing: 3px;
-  border-radius: 2px;
-  padding: 5px;
-
-  position: relative;
-  background: var(--p5-darkest);
-  color: var(--p5-lightest);
-  border: 2px solid var(--p5-lightest);
-
-  transform-style: preserve-3d;
-  transform: skew(344deg);
-}
-
-.divider__5126c:has(span) .content__908e2:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--p5-lightest);
-  transform: translateZ(-1px);
-}
-
-.divider__5126c:has(span) .content__908e2:before {
-   --p: 8px; /* control the shape (can be percentage) */
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: calc(84% + var(--p));
-  height: 100%;
-
-  border: 2px solid var(--p5-lightest);
-
-  background: var(--p5-lightest);
-  aspect-ratio: 1;
-  clip-path: polygon(0 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
-  transform: translateZ(-1px) skew(0);
-}
 
 ol[data-list-id="chat-messages"] div[role="separator"]:nth-child(2n + 1) span {
   transform: skew(-6deg);
-}
-
-ol[data-list-id="chat-messages"] div[role="article"] > div > div span[role="button"]:has(:not(img)) {
-  background: var(--p5-primary);
-  color: #fff !important;
-}
-
-ol[data-list-id="chat-messages"] div[role="article"] > div > div span[role="button"]:has(:not(img)):hover {
-  background: rgba(0, 0, 0, 0.6) !important;
 }
 
 /* User Message Area */
@@ -689,12 +785,11 @@ ol[data-list-id="chat-messages"] div[role="article"] > div > div span[role="butt
 
 .channelTextArea__648e5 {
   font-size: 0.95em;
-  /* font-family: "New P5"; */
   font-family: var(--p5-main-font);
 }
 
 div[data-slate-editor=true][data-slate-node=value] {
-  color: #000;
+  color: var(--p5-lightest);
 }
 
 
@@ -775,26 +870,7 @@ div[data-slate-editor=true][data-slate-node=value] {
   right: 0;
 }
 
-/* Mention override cause it's too hard to read as is */
-
-.slateTextArea-27tjG0 .mention {
-  background: var(--mp-pink) !important;
-  color: #fff;
-}
-
 /* Channel Column & Below */
-
-.flowerStar-1GeTsn {
-}
-
-.flowerStarContainer-3zDVtj .childContainer-1wxZNh svg path {
-  fill: #fff;
-}
-
-#channels ul li {
-  font-family: var(--p5-main-font);
-}
-
 #channels ul li div[role="img"],
 #channels ul li div > svg[role="img"]:not([width="18"]) {
   background: #000;
@@ -1296,22 +1372,3 @@ section[aria-label="User area"] button[type="button"]:hover {
 .toolbar-2bjZV7 .button-qqmJ7w:hover svg {
   color: var(--theme);
 }
-
-/* Tags */
-
-.botTag-3W9SuW,
-.bot-2Fta1w,
-.botTag-1un5a6 {
-  background: var(--mp-pink);
-}
-
-.botTag-3W9SuW span,
-.bot-2Fta1w span,
-.botTag-1un5a6 span {
-  color: #fff;
-}
-
-.botTagVerified-1klIIt {
-  color: #fff;
-}
-
